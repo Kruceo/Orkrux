@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html path="forza">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ISSO ai</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link    rel=  'stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+    </style>
+</head>
+
+<body>
+    <script>
+        window.onload = () => {
+            getSuspension();
+            document.querySelectorAll('input').forEach((inp, indice) => {
+                inp.onchange = function () {
+                    getSuspension();
+                }
+
+            }
+            )
+        }
+
+        function getSuspension() {
+            var peso = 1132;
+            peso = document.getElementById('peso-kg').value
+            var pesoLibras = peso * 2.2
+            var dianteira = 61;
+
+            dianteira = document.getElementById('dianteira').value
+
+            var traseira = 100 - dianteira;
+            var dianteiraResult = pesoLibras * (dianteira / 100)
+            var traseiraResult = pesoLibras * (traseira / 100)
+
+            var resultD = ((dianteiraResult) / 2) / 5.6
+            var resultT = ((traseiraResult) / 2) / 5.6
+
+            document.querySelector('#resultadoD').innerHTML = "D: " + resultD.toFixed(1) + ' kgf/mm';
+            document.querySelector('#resultadoT').innerHTML = 'T: ' + resultT.toFixed(1) + ' kgf/mm';
+            document.querySelector('#retornoD').innerHTML = "D: " + (((dianteiraResult / 2) / 100) + 1).toFixed(1) + ' points';
+            document.querySelector('#retornoT').innerHTML = 'T: ' + (((traseiraResult / 2) / 100) + 1).toFixed(1) + ' points'
+            document.querySelector('#compressaoD').innerHTML = 'D: ' + ((((dianteiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'
+            document.querySelector('#compressaoT').innerHTML = 'T: ' + ((((traseiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'
+        }
+    </script>
+    <main>
+        <section class="input-ground">
+            <div>
+                <p>peso (KG)</p>
+                <div>
+                    <input id="peso-kg" type="number" value="1200">
+                </div>
+            </div>
+            <div>
+                <p>dianteira (%)</p>
+                <div>
+
+                    <input id="dianteira" type="number" value="55">
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div>
+                <div class="titulo">
+                    <h2>MOLAS</h2>
+                </div>
+                <div class="resultado">
+                    <h2 id="resultadoD">dianteira</h2>
+                    <h2 id="resultadoT">traseira</h2>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <div>
+                <div class="titulo">
+                    <h2>RETORNO</h2>
+                </div>
+                <div class="resultado">
+                    <h2 id="retornoD">dianteira</h2>
+                    <h2 id="retornoT">traseira</h2>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <div>
+                <div class="titulo">
+                    <h2>COMPRESSAO</h2>
+                </div>
+                <div class="resultado">
+                    <h2 id="compressaoD">dianteira</h2>
+                    <h2 id="compressaoT">traseira</h2>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
