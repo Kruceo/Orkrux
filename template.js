@@ -1,13 +1,9 @@
-let body= document.createElement('body')
-let head= document.createElement('head')
-body.innerHTML = pages[0].html.body
-head.innerHTML = pages[0].html.head
-body.querySelectorAll('script').forEach((each)=>
+pages[pageIndex].jsPaths.forEach(scr=>
   {
-      let url = new URL(each.src);   
-      url.pathname = 'src/'+pages[0].route+url.pathname
-      each.src = url 
-   // new Function(each.innerText)()
+    let ele = document.createElement('script')
+    ele.type = scr.type
+    ele.innerHTML = scr.code;
+    body.appendChild(ele)
   })
 head.querySelectorAll('link').forEach((each)=>
 {
@@ -15,12 +11,12 @@ head.querySelectorAll('link').forEach((each)=>
 })
 
 
-pages[0].jsPaths.forEach((each)=>
+pages[pageIndex].jsPaths.forEach((each)=>
 {
   
 })
 let css = document.createElement('style')
-pages[0].cssPaths.forEach((each)=>
+pages[pageIndex].cssPaths.forEach((each)=>
 {
   css.innerHTML += each + '\n\n'
 })

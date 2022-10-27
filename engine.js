@@ -1,4 +1,4 @@
-import {Parser,parse} from 'acorn'
+import { Parser, parse } from 'acorn'
 import fs, { existsSync, mkdirSync, readFileSync, write, writeFileSync } from 'fs'
 const pagesPath = './app/routes/pages/'
 let pages = fs.readdirSync(pagesPath)
@@ -9,7 +9,7 @@ pages.forEach(folder => {
     let page = {
         html: { body: null, head: null },
         cssPaths: [],
-        jsPaths: [{}],
+        jsPaths: [],
         route: null
     }
     let content = fs.readdirSync(pagesPath + folder + '/');
@@ -29,19 +29,16 @@ pages.forEach(folder => {
         const filePath = pagesPath + folder + '/' + file
         if (file.endsWith('.js')) {
             let read = fs.readFileSync(filePath, 'utf-8')
-            
-            const parsed = parse(read,{ecmaVersion: 2021,allowImportExportEverywhere: true}).body
-            const types = parsed.map((declaration)=>
-            {
+
+            const parsed = parse(read, { ecmaVersion: 2021, allowImportExportEverywhere: true }).body
+            const types = parsed.map((declaration) => {
                 return declaration.type
             })
-            if(types.includes('ImportDeclaration'))
-            {
-                page.jsPaths.push({type: "es",code: read})
+            if (types.includes('ImportDeclaration') || types.includes('ExportDefaultDeclaration') || types.includes('ExportDeclaration')) {
+                page.jsPaths.push({ type: "module", code: read })
             }
-            else
-            {
-                page.jsPaths.push({type: "cjs",code: read})
+            else {
+                page.jsPaths.push({ type: null, code: read })
             }
             if (!existsSync('out/src/' + page.route + '/')) {
                 mkdirSync('out/src/' + page.route + '/', { recursive: true })
@@ -49,17 +46,15 @@ pages.forEach(folder => {
             writeFileSync('out/src/' + page.route + '/' + file, readFileSync(filePath, 'utf-8'))
 
         }
-
         if (file.endsWith('.css')) {
             let read = fs.readFileSync(filePath, 'utf-8')
             page.cssPaths.push(read)
             css += '\n\n' + read
 
         }
-
     })
-
     pagesCompiled.push(page)
     fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + fs.readFileSync('template.js', 'utf-8'))
-    //writeFileSync('out/index.css',css)
+    writeFileSync('out/index.css', css)
+
 })
