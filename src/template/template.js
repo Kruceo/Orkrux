@@ -24,21 +24,12 @@ function genPage(index) {
   head.querySelectorAll('link').forEach((each) => {
     //each.remove()
   })
-
-  let css = document.createElement('style')
-  pages[pageIndex].cssPaths.forEach((each) => {
-    css.innerHTML += each + '\n\n'
-  })
-
-  head.appendChild(css)
   document.documentElement.removeChild(document.querySelector('head'))
   document.documentElement.appendChild(head)
   document.documentElement.removeChild(document.querySelector('body'))
   document.documentElement.appendChild(body)
   console.timeEnd('page-gen')
   window.dispatchEvent(new Event('load'))
-
-  window.addEventListener('load', (e) => console.log(e))
 
 }
 console.log(window.location.pathname)
@@ -52,7 +43,6 @@ function verifyPath() {
   pages.forEach((element, index) => {
 
     if (element.route && '/' + element.route.toLowerCase() == window.location.pathname.toLowerCase()) {
-      console.log(element.route, window.location.pathname)
       genPage(index)
     }
   });
@@ -60,10 +50,7 @@ function verifyPath() {
 
 window.addEventListener('popstate', (e) => {
   verifyPath()
-  console.log(e)
-  
 })
 
 //verifyPath()
 verifyPath()
-console.log(window.HTMLAnchorElement)

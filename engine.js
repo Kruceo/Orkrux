@@ -1,8 +1,8 @@
 import { Parser, parse } from 'acorn'
 import fs, { existsSync, mkdirSync, readFileSync, write, writeFileSync } from 'fs'
 import path from 'path'
-import processJS from './posProcessJS.js'
-import processCSS from './posProcessCSS.js'
+import processJS from './src/lib/posProcessJS.js'
+import processCSS from './src/lib/posProcessCSS.js'
 const pagesPath = './app/routes/pages/'
 let pages = fs.readdirSync(pagesPath)
 
@@ -12,12 +12,12 @@ pages.forEach(async (folder) => {
     console.log(folder)
 
     let page = genFromFiles(pagesPath + folder + '/')
-    let posProcess = await processJS(page)
-    await processCSS(page)
-    pagesCompiled.push( posProcess)
+    let posJS = await processJS(page)
+    let posCSS = await processCSS(posJS)
+    pagesCompiled.push(posCSS)
     
-    fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + fs.readFileSync('template.js', 'utf-8'))
-    fs.writeFileSync('out/index.html',fs.readFileSync('template.html','utf-8'))
+    fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + fs.readFileSync('src/template/template.js', 'utf-8'))
+    fs.writeFileSync('out/index.html',fs.readFileSync('src/template/template.html','utf-8'))
 })
 
 
@@ -72,11 +72,11 @@ function genFromFiles(dir) {
         }
 
         
-        if (file.endsWith('.css')) {
-            let read = fs.readFileSync(filePath, 'utf-8')
-            page.cssPaths.push(read)
-            //css += '\n\n' + read
-        }
+        // if (file.endsWith('.css')) {
+        //     let read = fs.readFileSync(filePath, 'utf-8')
+        //     page.cssPaths.push(read)
+        //     //css += '\n\n' + read
+        // }
         if (fs.lstatSync(filePath).isDirectory()) {
             console.log('∟ ' + file + '/')
             if(file == 'public')
