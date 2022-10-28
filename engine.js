@@ -3,7 +3,7 @@ import fs, { existsSync, mkdirSync, readFileSync, write, writeFileSync } from 'f
 import path from 'path'
 import processJS from './src/lib/posProcessJS.js'
 import processCSS from './src/lib/posProcessCSS.js'
-const pagesPath = './app/routes/pages/'
+const pagesPath = './pages/'
 let pages = fs.readdirSync(pagesPath)
 
 let pagesCompiled = []

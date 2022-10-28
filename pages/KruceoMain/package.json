@@ -1,0 +1,10 @@
+{
+    "type": "module",
+    "dependencies": {
+        "banana-slider": "github:kruceo/bananaslider",
+        "bananaslider": "github:kruceo/bananaslider",
+        "less": "^4.1.3",
+        "pasteljs": "github:kruceo/pasteljs",
+        "vesic-js": "github:inforgdev/vesic-js"
+    }
+}
