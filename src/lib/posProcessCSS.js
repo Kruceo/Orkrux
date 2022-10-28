@@ -21,7 +21,6 @@ export default async function process(pageObject) {
         })
         return t
     })
-    console.log(onHtmlLinks)
     onHtmlLinks.forEach(each=>
         {
             target.cssPaths.push(fs.readFileSync(target.path+each,'utf-8'))

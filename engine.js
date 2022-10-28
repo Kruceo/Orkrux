@@ -46,43 +46,15 @@ function genFromFiles(dir) {
     })
     content.forEach(file => {
         const filePath = dir + '/' + file
-
-        // if (file.endsWith('.js')) {
-        //     let read = fs.readFileSync(filePath, 'utf-8')
-
-        //     const parsed = parse(read, { ecmaVersion: 2021, allowImportExportEverywhere: true }).body
-        //     const types = parsed.map((declaration) => {
-        //         return declaration.type
-        //     })
-        //     if (types.includes('ImportDeclaration') || types.includes('ExportDefaultDeclaration') || types.includes('ExportDeclaration')) {
-        //         //page.jsPaths.push({ type: "module", code: read }) lembrar de desmarcar
-        //         console.log("∟ " + file + ' => module')
-        //     }
-        //     else {
-        //         //page.jsPaths.push({ type: null, code: read })
-        //         console.log("∟ " + file)
-        //     }
-
-        // }
-        function base64_encode(file) {
-            // read binary data
-            var bitmap = fs.readFileSync(file);
-            // convert binary data to base64 encoded string
-            return bitmap.toString('base64');
-        }
-
-        
-        // if (file.endsWith('.css')) {
-        //     let read = fs.readFileSync(filePath, 'utf-8')
-        //     page.cssPaths.push(read)
-        //     //css += '\n\n' + read
-        // }
         if (fs.lstatSync(filePath).isDirectory()) {
             console.log('∟ ' + file + '/')
             if(file == 'public')
             {   
-                console.log(path.join(filePath))
-                fs.cpSync(path.join(filePath)+ '/','./out/public',{recursive: true})
+                fs.cpSync(path.join(filePath)+ '/','./out/public',{recursive: true,force:true})
+            }
+            if(file == 'package.json')
+            {
+                console.log(fs.readFileSync(filePath,'utf-8'))
             }
         }
         

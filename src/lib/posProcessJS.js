@@ -64,7 +64,6 @@ export default async function process(pageObject) {
     target.html.body = newBody
     //console.log(onHtmlScripts)
     target.jsPaths.push(...onHtmlScripts)
-    console.log('aqui tambem')
     appendFileSync('test/JSProcess.json', '\n\n\n\n\n\n\n' + JSON.stringify(target, null, 2))
     browser.close()
     return target
