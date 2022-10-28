@@ -1,0 +1,348 @@
+
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<h2>Hello world</h2>\n    \n    \n",
+    "head": "\n    <meta charset='utf-8'>\n    <title>princial</title>\n"
+  },
+  "cssPaths": [
+    "body\n{\n    background-color: aqua;\n}"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "console.log('okkkk')",
+      "src": "outro.js"
+    },
+    {
+      "type": "",
+      "code": "console.log('ok')",
+      "src": "main.js"
+    }
+  ],
+  "route": null,
+  "path": "./app/routes/pages/page2/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<main>\n        <section class=\"input-ground\">\n            <div>\n                <p>peso (KG)</p>\n                <div>\n                    <input id=\"peso-kg\" type=\"number\" value=\"1200\">\n                </div>\n            </div>\n            <div>\n                <p>dianteira (%)</p>\n                <div>\n\n                    <input id=\"dianteira\" type=\"number\" value=\"55\">\n                </div>\n            </div>\n\n        </section>\n\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>MOLAS</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"resultadoD\">D: 129.6 kgf/mm</h2>\n                    <h2 id=\"resultadoT\">T: 106.1 kgf/mm</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>RETORNO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"retornoD\">D: 8.3 points</h2>\n                    <h2 id=\"retornoT\">T: 6.9 points</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>COMPRESSAO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"compressaoD\">D: 12.4 points</h2>\n                    <h2 id=\"compressaoT\">T: 10.4 points</h2>\n                </div>\n            </div>\n\n        </section>\n\n    </main>\n",
+    "head": "\n    <route>forza</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>ISSO ai</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link    rel=  'stylesheet' type='text/css' media='screen' href='main.css'>\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');\n\n        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');\n    </style>\n"
+  },
+  "cssPaths": [
+    "picture\n{\n  width: 100px;\n}",
+    "body {\n  background-position: 0 0;\n  background-size: cover;\n  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7043a0d1-b74b-4b91-a3af-cad99823d060/dfegna6-6d146a1f-d3e1-425f-a2d6-6c2ee028eaca.jpg/v1/fill/w_613,h_350,q_70,strp/desktop_wallpaper___night_sky_4_by_niphion_dfegna6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvZGZlZ25hNi02ZDE0NmExZi1kM2UxLTQyNWYtYTJkNi02YzJlZTAyOGVhY2EuanBnIiwiaGVpZ2h0IjoiPD01MTUiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvbmlwaGlvbi00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.Oq625L-zpOQaI4bt_R49v2VgxCDHxM0LmUEUq1WjrPA);\n}\nmain {\n  width: 80%;\n  margin: 0 auto;\n  font-family: 'dongle';\n  color: white;\n}\nsection {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\nsection > div {\n  backdrop-filter: blur(20px);\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  overflow: hidden;\n  margin: 10px;\n  border-radius: 10px;\n}\nsection > div .titulo {\n  background-color: rgba(0, 0, 0, 0.7);\n}\nsection > div .titulo h2 {\n  margin: 0;\n  width: 100%;\n  text-align: center;\n  font-size: 45px;\n}\nsection > div .resultado {\n  font-size: 35px;\n  display: flex;\n  justify-content: center;\n}\nsection > div .resultado > h2 {\n  margin: 0 40px;\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "\n        window.onload = () => {\n            getSuspension();\n            document.querySelectorAll('input').forEach((inp, indice) => {\n                inp.onchange = function () {\n                    getSuspension();\n                }\n\n            }\n            )\n        }\n\n        function getSuspension() {\n            var peso = 1132;\n            peso = document.getElementById('peso-kg').value\n            var pesoLibras = peso * 2.2\n            var dianteira = 61;\n\n            dianteira = document.getElementById('dianteira').value\n\n            var traseira = 100 - dianteira;\n            var dianteiraResult = pesoLibras * (dianteira / 100)\n            var traseiraResult = pesoLibras * (traseira / 100)\n\n            var resultD = ((dianteiraResult) / 2) / 5.6\n            var resultT = ((traseiraResult) / 2) / 5.6\n\n            document.querySelector('#resultadoD').innerHTML = \"D: \" + resultD.toFixed(1) + ' kgf/mm';\n            document.querySelector('#resultadoT').innerHTML = 'T: ' + resultT.toFixed(1) + ' kgf/mm';\n            document.querySelector('#retornoD').innerHTML = \"D: \" + (((dianteiraResult / 2) / 100) + 1).toFixed(1) + ' points';\n            document.querySelector('#retornoT').innerHTML = 'T: ' + (((traseiraResult / 2) / 100) + 1).toFixed(1) + ' points'\n            document.querySelector('#compressaoD').innerHTML = 'D: ' + ((((dianteiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n            document.querySelector('#compressaoT').innerHTML = 'T: ' + ((((traseiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n        }\n    "
+    }
+  ],
+  "route": "forza",
+  "path": "./app/routes/pages/page1/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<header class=\"bar\">\n        <img class=\"logo\" src=\"./public/img/logo.png\" alt=\"\">\n        <ul class=\"menu\">\n            <li>\n                <a href=\"forza\" rel=\"no-refresh\">\n                    <p>Main</p>\n                </a>\n            </li>\n            <li>\n\n                <p>Projects</p>\n\n            </li>\n            <li>\n\n                <p>Info</p>\n\n            </li>\n        </ul>\n        <ul class=\"social\">\n            <li>\n                <img src=\"img/git.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/instagram.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/face.png\" alt=\"\">\n            </li>\n        </ul>\n    </header>\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    <header class=\"content\">\n        <section id=\"welcome-itens\">\n            <h2>Just a look</h2>\n            <div id=\"boxes\">\n                <div id=\"box\">\n                    <h2>Open Source</h2>\n                    <p>You will reach open source library here</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091819.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Multi Language</h2>\n                    <p>Projects in multiple languages and platforms</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091807.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>From dev for dev</h2>\n                    <p>Get libraries to make your work a little bit more easy </p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091822.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Different projects</h2>\n                    <p>See some projects with one screw less</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091799.png\" alt=\"\">\n                </div>\n            </div>\n        </section>\n        <section>\n            <h2>Highlights</h2>\n            <slider cooldown=\"5000\">\n                <slide>\n                    <div>\n                        <img src=\"./public/img/72dddd7835.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;BananaSlider/&gt;</h2>\n                            <p>BananaSlider is a library built in pure JavaScript, is a very easy and customizable way\n                                to create slides (carrousel's) with total control over it. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/bananaslider\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n                <slide>\n                    <div>\n                        <img src=\"./public/img/code-sample.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;PipocaJS/&gt;</h2>\n                            <p>Version fixer and incrementer for JavaScript and Git repositories, just type \"pipoca\" and\n                                you can forget to increment your package version...\n                                This works watching commits and yours messages. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/PipocaJS\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n            </slider>\n        </section>\n\n        <section>\n\n        </section>\n    </header>\n    <footer>\n        <h2>\n            All rights reserved ⚠️\n        </h2>\n    </footer>\n\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n                <slide>\n                    <h2>BURRO</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    \n    <script src=\"https://banana.kruceo.com/dist/bundle.cdn.js\"></script>\n    \n\n\n",
+    "head": "\n    <route>main</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>Kruceo | Main</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link rel='stylesheet' type='text/css' media='screen' href='main.less'>\n    <script src=\"srum.js\"></script>\n    <style>\n        @import url('https://fonts.googleapis.com/css?family=Karla');\n    </style>\n"
+  },
+  "cssPaths": [
+    "* {\n  margin: 0 auto;\n}\nbody {\n  background: linear-gradient(black 0%, #11001a 100%);\n  background-repeat: no-repeat;\n}\n.bar {\n  position: fixed;\n  top: 0;\n  background-color: black;\n  z-index: 5;\n  width: 100%;\n  height: 45px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.bar .logo {\n  width: 30px;\n  padding-left: 2px;\n}\n.bar .menu {\n  display: flex;\n  padding: 0;\n  position: absolute;\n}\n.bar .menu li {\n  list-style: none;\n  margin: 0 60px;\n}\n.bar .menu li a {\n  text-decoration: none;\n}\n.bar .menu li p {\n  cursor: pointer;\n  color: white;\n  text-align: center;\n  font-family: 'karla';\n  text-transform: uppercase;\n}\n.bar .menu li p:hover {\n  color: #d61c59;\n}\n.bar .social {\n  width: 100%;\n  margin: 0 0;\n  justify-content: flex-end;\n  display: flex;\n}\n.bar .social li {\n  margin: 0 10px;\n}\n.bar .social li img {\n  width: 30px;\n}\n.wallpaper-ground {\n  height: 95vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  transform: scaleY(1);\n}\n.wallpaper-ground div {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.wallpaper-ground h2 {\n  font-family: 'karla';\n  color: #d61c59;\n  font-size: 100px;\n  animation: forwards welcome 1s cubic-bezier(0, 1, 1, 1);\n}\n.wallpaper-ground .line {\n  animation: forwards welcome 1.5s;\n  width: 500px;\n  height: 12px;\n  background-color: #d61c59;\n}\n.wallpaper-ground slider h2 {\n  font-size: 40px;\n}\n.content {\n  width: 1000px;\n}\n.content section {\n  margin-top: 120px;\n  margin-bottom: 60px;\n}\n.content section h2 {\n  text-align: center;\n  text-transform: uppercase;\n  font-size: 30px;\n  font-family: 'karla';\n  color: white;\n  margin-bottom: 10px;\n}\n.content section slider slider-frame slide div {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  background-color: #242424;\n  color: white;\n  border-radius: 20px;\n  overflow: hidden;\n}\n.content section slider slider-frame slide div img {\n  width: 350px;\n  transition: filter 500ms;\n}\n.content section slider slider-frame slide div img:hover {\n  filter: grayscale();\n}\n.content section slider slider-frame slide div div {\n  display: block;\n}\n.content section slider slider-frame slide div div h2 {\n  padding: 10px;\n  text-align: left;\n  color: #d61c59;\n}\n.content section slider slider-frame slide div div p {\n  padding: 10px;\n  font-family: 'karla';\n  text-align: left;\n  height: 230px;\n}\n.content section slider slider-frame slide div div a {\n  width: 100%;\n  padding: 10px;\n  text-decoration: none;\n  text-align: end;\n  font-family: 'karla';\n  color: #a3a3a3;\n  transition: color 200ms;\n}\n.content section slider slider-frame slide div div a:hover {\n  color: #d61c59;\n}\n.content #welcome-itens #boxes {\n  display: flex;\n}\n.content #welcome-itens #boxes #box {\n  width: 200px;\n  height: 200px;\n  background-color: #242424;\n  border-radius: 20px;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.content #welcome-itens #boxes #box h2 {\n  font-size: 20px;\n}\n.content #welcome-itens #boxes #box p {\n  color: white;\n  font-family: 'karla';\n  text-align: center;\n  height: 80px;\n}\n.content #welcome-itens #boxes #box img {\n  width: 80px;\n  padding: 5px;\n}\nfooter {\n  width: 100%;\n  height: 100px;\n  background-color: rgba(0, 255, 255, 0);\n}\n@keyframes welcome {\n  0% {\n    opacity: 0;\n  }\n  25% {\n    transform: translate(0, -100px);\n    opacity: 0;\n  }\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "module",
+      "code": "import { initAllSliders } from './node_modules/bananaslider'\nimport {initAllWoodPicker} from './node_modules/pasteljs'\ninitAllSliders()\ninitAllWoodPicker()\nexport default true",
+      "src": "main.js"
+    },
+    {
+      "type": "",
+      "code": "",
+      "src": "https://banana.kruceo.com/dist/bundle.cdn.js"
+    },
+    {
+      "type": "",
+      "code": "\n\n        console.log('olá')\n    "
+    },
+    {
+      "type": "",
+      "code": "\n    console.log('oi')\n"
+    }
+  ],
+  "route": "main",
+  "path": "./app/routes/pages/KruceoMain/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<main>\n        <section class=\"input-ground\">\n            <div>\n                <p>peso (KG)</p>\n                <div>\n                    <input id=\"peso-kg\" type=\"number\" value=\"1200\">\n                </div>\n            </div>\n            <div>\n                <p>dianteira (%)</p>\n                <div>\n\n                    <input id=\"dianteira\" type=\"number\" value=\"55\">\n                </div>\n            </div>\n\n        </section>\n\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>MOLAS</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"resultadoD\">D: 129.6 kgf/mm</h2>\n                    <h2 id=\"resultadoT\">T: 106.1 kgf/mm</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>RETORNO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"retornoD\">D: 8.3 points</h2>\n                    <h2 id=\"retornoT\">T: 6.9 points</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>COMPRESSAO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"compressaoD\">D: 12.4 points</h2>\n                    <h2 id=\"compressaoT\">T: 10.4 points</h2>\n                </div>\n            </div>\n\n        </section>\n\n    </main>\n",
+    "head": "\n    <route>forza</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>ISSO ai</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link    rel=  'stylesheet' type='text/css' media='screen' href='main.css'>\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');\n\n        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');\n    </style>\n"
+  },
+  "cssPaths": [
+    "picture\n{\n  width: 100px;\n}",
+    "body {\n  background-position: 0 0;\n  background-size: cover;\n  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7043a0d1-b74b-4b91-a3af-cad99823d060/dfegna6-6d146a1f-d3e1-425f-a2d6-6c2ee028eaca.jpg/v1/fill/w_613,h_350,q_70,strp/desktop_wallpaper___night_sky_4_by_niphion_dfegna6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvZGZlZ25hNi02ZDE0NmExZi1kM2UxLTQyNWYtYTJkNi02YzJlZTAyOGVhY2EuanBnIiwiaGVpZ2h0IjoiPD01MTUiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvbmlwaGlvbi00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.Oq625L-zpOQaI4bt_R49v2VgxCDHxM0LmUEUq1WjrPA);\n}\nmain {\n  width: 80%;\n  margin: 0 auto;\n  font-family: 'dongle';\n  color: white;\n}\nsection {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\nsection > div {\n  backdrop-filter: blur(20px);\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  overflow: hidden;\n  margin: 10px;\n  border-radius: 10px;\n}\nsection > div .titulo {\n  background-color: rgba(0, 0, 0, 0.7);\n}\nsection > div .titulo h2 {\n  margin: 0;\n  width: 100%;\n  text-align: center;\n  font-size: 45px;\n}\nsection > div .resultado {\n  font-size: 35px;\n  display: flex;\n  justify-content: center;\n}\nsection > div .resultado > h2 {\n  margin: 0 40px;\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "\n        window.onload = () => {\n            getSuspension();\n            document.querySelectorAll('input').forEach((inp, indice) => {\n                inp.onchange = function () {\n                    getSuspension();\n                }\n\n            }\n            )\n        }\n\n        function getSuspension() {\n            var peso = 1132;\n            peso = document.getElementById('peso-kg').value\n            var pesoLibras = peso * 2.2\n            var dianteira = 61;\n\n            dianteira = document.getElementById('dianteira').value\n\n            var traseira = 100 - dianteira;\n            var dianteiraResult = pesoLibras * (dianteira / 100)\n            var traseiraResult = pesoLibras * (traseira / 100)\n\n            var resultD = ((dianteiraResult) / 2) / 5.6\n            var resultT = ((traseiraResult) / 2) / 5.6\n\n            document.querySelector('#resultadoD').innerHTML = \"D: \" + resultD.toFixed(1) + ' kgf/mm';\n            document.querySelector('#resultadoT').innerHTML = 'T: ' + resultT.toFixed(1) + ' kgf/mm';\n            document.querySelector('#retornoD').innerHTML = \"D: \" + (((dianteiraResult / 2) / 100) + 1).toFixed(1) + ' points';\n            document.querySelector('#retornoT').innerHTML = 'T: ' + (((traseiraResult / 2) / 100) + 1).toFixed(1) + ' points'\n            document.querySelector('#compressaoD').innerHTML = 'D: ' + ((((dianteiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n            document.querySelector('#compressaoT').innerHTML = 'T: ' + ((((traseiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n        }\n    "
+    }
+  ],
+  "route": "forza",
+  "path": "./app/routes/pages/page1/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<h2>Hello world</h2>\n    \n    \n",
+    "head": "\n    <meta charset='utf-8'>\n    <title>princial</title>\n"
+  },
+  "cssPaths": [
+    "body\n{\n    background-color: aqua;\n}"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "console.log('okkkk')",
+      "src": "outro.js"
+    },
+    {
+      "type": "",
+      "code": "console.log('ok')",
+      "src": "main.js"
+    }
+  ],
+  "route": null,
+  "path": "./app/routes/pages/page2/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<header class=\"bar\">\n        <img class=\"logo\" src=\"./public/img/logo.png\" alt=\"\">\n        <ul class=\"menu\">\n            <li>\n                <a href=\"forza\" rel=\"no-refresh\">\n                    <p>Main</p>\n                </a>\n            </li>\n            <li>\n\n                <p>Projects</p>\n\n            </li>\n            <li>\n\n                <p>Info</p>\n\n            </li>\n        </ul>\n        <ul class=\"social\">\n            <li>\n                <img src=\"img/git.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/instagram.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/face.png\" alt=\"\">\n            </li>\n        </ul>\n    </header>\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    <header class=\"content\">\n        <section id=\"welcome-itens\">\n            <h2>Just a look</h2>\n            <div id=\"boxes\">\n                <div id=\"box\">\n                    <h2>Open Source</h2>\n                    <p>You will reach open source library here</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091819.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Multi Language</h2>\n                    <p>Projects in multiple languages and platforms</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091807.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>From dev for dev</h2>\n                    <p>Get libraries to make your work a little bit more easy </p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091822.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Different projects</h2>\n                    <p>See some projects with one screw less</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091799.png\" alt=\"\">\n                </div>\n            </div>\n        </section>\n        <section>\n            <h2>Highlights</h2>\n            <slider cooldown=\"5000\">\n                <slide>\n                    <div>\n                        <img src=\"./public/img/72dddd7835.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;BananaSlider/&gt;</h2>\n                            <p>BananaSlider is a library built in pure JavaScript, is a very easy and customizable way\n                                to create slides (carrousel's) with total control over it. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/bananaslider\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n                <slide>\n                    <div>\n                        <img src=\"./public/img/code-sample.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;PipocaJS/&gt;</h2>\n                            <p>Version fixer and incrementer for JavaScript and Git repositories, just type \"pipoca\" and\n                                you can forget to increment your package version...\n                                This works watching commits and yours messages. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/PipocaJS\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n            </slider>\n        </section>\n\n        <section>\n\n        </section>\n    </header>\n    <footer>\n        <h2>\n            All rights reserved ⚠️\n        </h2>\n    </footer>\n\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n                <slide>\n                    <h2>BURRO</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    \n    <script src=\"https://banana.kruceo.com/dist/bundle.cdn.js\"></script>\n    \n\n\n",
+    "head": "\n    <route>main</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>Kruceo | Main</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link rel='stylesheet' type='text/css' media='screen' href='main.less'>\n    <script src=\"srum.js\"></script>\n    <style>\n        @import url('https://fonts.googleapis.com/css?family=Karla');\n    </style>\n"
+  },
+  "cssPaths": [
+    "* {\n  margin: 0 auto;\n}\nbody {\n  background: linear-gradient(black 0%, #11001a 100%);\n  background-repeat: no-repeat;\n}\n.bar {\n  position: fixed;\n  top: 0;\n  background-color: black;\n  z-index: 5;\n  width: 100%;\n  height: 45px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.bar .logo {\n  width: 30px;\n  padding-left: 2px;\n}\n.bar .menu {\n  display: flex;\n  padding: 0;\n  position: absolute;\n}\n.bar .menu li {\n  list-style: none;\n  margin: 0 60px;\n}\n.bar .menu li a {\n  text-decoration: none;\n}\n.bar .menu li p {\n  cursor: pointer;\n  color: white;\n  text-align: center;\n  font-family: 'karla';\n  text-transform: uppercase;\n}\n.bar .menu li p:hover {\n  color: #d61c59;\n}\n.bar .social {\n  width: 100%;\n  margin: 0 0;\n  justify-content: flex-end;\n  display: flex;\n}\n.bar .social li {\n  margin: 0 10px;\n}\n.bar .social li img {\n  width: 30px;\n}\n.wallpaper-ground {\n  height: 95vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  transform: scaleY(1);\n}\n.wallpaper-ground div {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.wallpaper-ground h2 {\n  font-family: 'karla';\n  color: #d61c59;\n  font-size: 100px;\n  animation: forwards welcome 1s cubic-bezier(0, 1, 1, 1);\n}\n.wallpaper-ground .line {\n  animation: forwards welcome 1.5s;\n  width: 500px;\n  height: 12px;\n  background-color: #d61c59;\n}\n.wallpaper-ground slider h2 {\n  font-size: 40px;\n}\n.content {\n  width: 1000px;\n}\n.content section {\n  margin-top: 120px;\n  margin-bottom: 60px;\n}\n.content section h2 {\n  text-align: center;\n  text-transform: uppercase;\n  font-size: 30px;\n  font-family: 'karla';\n  color: white;\n  margin-bottom: 10px;\n}\n.content section slider slider-frame slide div {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  background-color: #242424;\n  color: white;\n  border-radius: 20px;\n  overflow: hidden;\n}\n.content section slider slider-frame slide div img {\n  width: 350px;\n  transition: filter 500ms;\n}\n.content section slider slider-frame slide div img:hover {\n  filter: grayscale();\n}\n.content section slider slider-frame slide div div {\n  display: block;\n}\n.content section slider slider-frame slide div div h2 {\n  padding: 10px;\n  text-align: left;\n  color: #d61c59;\n}\n.content section slider slider-frame slide div div p {\n  padding: 10px;\n  font-family: 'karla';\n  text-align: left;\n  height: 230px;\n}\n.content section slider slider-frame slide div div a {\n  width: 100%;\n  padding: 10px;\n  text-decoration: none;\n  text-align: end;\n  font-family: 'karla';\n  color: #a3a3a3;\n  transition: color 200ms;\n}\n.content section slider slider-frame slide div div a:hover {\n  color: #d61c59;\n}\n.content #welcome-itens #boxes {\n  display: flex;\n}\n.content #welcome-itens #boxes #box {\n  width: 200px;\n  height: 200px;\n  background-color: #242424;\n  border-radius: 20px;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.content #welcome-itens #boxes #box h2 {\n  font-size: 20px;\n}\n.content #welcome-itens #boxes #box p {\n  color: white;\n  font-family: 'karla';\n  text-align: center;\n  height: 80px;\n}\n.content #welcome-itens #boxes #box img {\n  width: 80px;\n  padding: 5px;\n}\nfooter {\n  width: 100%;\n  height: 100px;\n  background-color: rgba(0, 255, 255, 0);\n}\n@keyframes welcome {\n  0% {\n    opacity: 0;\n  }\n  25% {\n    transform: translate(0, -100px);\n    opacity: 0;\n  }\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "module",
+      "code": "import { initAllSliders } from './node_modules/bananaslider'\nimport {initAllWoodPicker} from './node_modules/pasteljs'\ninitAllSliders()\ninitAllWoodPicker()\nexport default true",
+      "src": "main.js"
+    },
+    {
+      "type": "",
+      "code": "",
+      "src": "https://banana.kruceo.com/dist/bundle.cdn.js"
+    },
+    {
+      "type": "",
+      "code": "\n\n        console.log('olá')\n    "
+    },
+    {
+      "type": "",
+      "code": "\n    console.log('oi')\n"
+    }
+  ],
+  "route": "main",
+  "path": "./app/routes/pages/KruceoMain/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<h2>Hello world</h2>\n    \n    \n",
+    "head": "\n    <meta charset='utf-8'>\n    <title>princial</title>\n"
+  },
+  "cssPaths": [
+    "body\n{\n    background-color: aqua;\n}"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "console.log('okkkk')",
+      "src": "outro.js"
+    },
+    {
+      "type": "",
+      "code": "console.log('ok')",
+      "src": "main.js"
+    }
+  ],
+  "route": null,
+  "path": "./app/routes/pages/page2/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<main>\n        <section class=\"input-ground\">\n            <div>\n                <p>peso (KG)</p>\n                <div>\n                    <input id=\"peso-kg\" type=\"number\" value=\"1200\">\n                </div>\n            </div>\n            <div>\n                <p>dianteira (%)</p>\n                <div>\n\n                    <input id=\"dianteira\" type=\"number\" value=\"55\">\n                </div>\n            </div>\n\n        </section>\n\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>MOLAS</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"resultadoD\">D: 129.6 kgf/mm</h2>\n                    <h2 id=\"resultadoT\">T: 106.1 kgf/mm</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>RETORNO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"retornoD\">D: 8.3 points</h2>\n                    <h2 id=\"retornoT\">T: 6.9 points</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>COMPRESSAO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"compressaoD\">D: 12.4 points</h2>\n                    <h2 id=\"compressaoT\">T: 10.4 points</h2>\n                </div>\n            </div>\n\n        </section>\n\n    </main>\n",
+    "head": "\n    <route>forza</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>ISSO ai</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link    rel=  'stylesheet' type='text/css' media='screen' href='main.css'>\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');\n\n        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');\n    </style>\n"
+  },
+  "cssPaths": [
+    "picture\n{\n  width: 100px;\n}",
+    "body {\n  background-position: 0 0;\n  background-size: cover;\n  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7043a0d1-b74b-4b91-a3af-cad99823d060/dfegna6-6d146a1f-d3e1-425f-a2d6-6c2ee028eaca.jpg/v1/fill/w_613,h_350,q_70,strp/desktop_wallpaper___night_sky_4_by_niphion_dfegna6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvZGZlZ25hNi02ZDE0NmExZi1kM2UxLTQyNWYtYTJkNi02YzJlZTAyOGVhY2EuanBnIiwiaGVpZ2h0IjoiPD01MTUiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvbmlwaGlvbi00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.Oq625L-zpOQaI4bt_R49v2VgxCDHxM0LmUEUq1WjrPA);\n}\nmain {\n  width: 80%;\n  margin: 0 auto;\n  font-family: 'dongle';\n  color: white;\n}\nsection {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\nsection > div {\n  backdrop-filter: blur(20px);\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  overflow: hidden;\n  margin: 10px;\n  border-radius: 10px;\n}\nsection > div .titulo {\n  background-color: rgba(0, 0, 0, 0.7);\n}\nsection > div .titulo h2 {\n  margin: 0;\n  width: 100%;\n  text-align: center;\n  font-size: 45px;\n}\nsection > div .resultado {\n  font-size: 35px;\n  display: flex;\n  justify-content: center;\n}\nsection > div .resultado > h2 {\n  margin: 0 40px;\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "\n        window.onload = () => {\n            getSuspension();\n            document.querySelectorAll('input').forEach((inp, indice) => {\n                inp.onchange = function () {\n                    getSuspension();\n                }\n\n            }\n            )\n        }\n\n        function getSuspension() {\n            var peso = 1132;\n            peso = document.getElementById('peso-kg').value\n            var pesoLibras = peso * 2.2\n            var dianteira = 61;\n\n            dianteira = document.getElementById('dianteira').value\n\n            var traseira = 100 - dianteira;\n            var dianteiraResult = pesoLibras * (dianteira / 100)\n            var traseiraResult = pesoLibras * (traseira / 100)\n\n            var resultD = ((dianteiraResult) / 2) / 5.6\n            var resultT = ((traseiraResult) / 2) / 5.6\n\n            document.querySelector('#resultadoD').innerHTML = \"D: \" + resultD.toFixed(1) + ' kgf/mm';\n            document.querySelector('#resultadoT').innerHTML = 'T: ' + resultT.toFixed(1) + ' kgf/mm';\n            document.querySelector('#retornoD').innerHTML = \"D: \" + (((dianteiraResult / 2) / 100) + 1).toFixed(1) + ' points';\n            document.querySelector('#retornoT').innerHTML = 'T: ' + (((traseiraResult / 2) / 100) + 1).toFixed(1) + ' points'\n            document.querySelector('#compressaoD').innerHTML = 'D: ' + ((((dianteiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n            document.querySelector('#compressaoT').innerHTML = 'T: ' + ((((traseiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n        }\n    "
+    }
+  ],
+  "route": "forza",
+  "path": "./app/routes/pages/page1/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<header class=\"bar\">\n        <img class=\"logo\" src=\"./public/img/logo.png\" alt=\"\">\n        <ul class=\"menu\">\n            <li>\n                <a href=\"forza\" rel=\"no-refresh\">\n                    <p>Main</p>\n                </a>\n            </li>\n            <li>\n\n                <p>Projects</p>\n\n            </li>\n            <li>\n\n                <p>Info</p>\n\n            </li>\n        </ul>\n        <ul class=\"social\">\n            <li>\n                <img src=\"img/git.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/instagram.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/face.png\" alt=\"\">\n            </li>\n        </ul>\n    </header>\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    <header class=\"content\">\n        <section id=\"welcome-itens\">\n            <h2>Just a look</h2>\n            <div id=\"boxes\">\n                <div id=\"box\">\n                    <h2>Open Source</h2>\n                    <p>You will reach open source library here</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091819.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Multi Language</h2>\n                    <p>Projects in multiple languages and platforms</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091807.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>From dev for dev</h2>\n                    <p>Get libraries to make your work a little bit more easy </p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091822.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Different projects</h2>\n                    <p>See some projects with one screw less</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091799.png\" alt=\"\">\n                </div>\n            </div>\n        </section>\n        <section>\n            <h2>Highlights</h2>\n            <slider cooldown=\"5000\">\n                <slide>\n                    <div>\n                        <img src=\"./public/img/72dddd7835.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;BananaSlider/&gt;</h2>\n                            <p>BananaSlider is a library built in pure JavaScript, is a very easy and customizable way\n                                to create slides (carrousel's) with total control over it. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/bananaslider\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n                <slide>\n                    <div>\n                        <img src=\"./public/img/code-sample.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;PipocaJS/&gt;</h2>\n                            <p>Version fixer and incrementer for JavaScript and Git repositories, just type \"pipoca\" and\n                                you can forget to increment your package version...\n                                This works watching commits and yours messages. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/PipocaJS\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n            </slider>\n        </section>\n\n        <section>\n\n        </section>\n    </header>\n    <footer>\n        <h2>\n            All rights reserved ⚠️\n        </h2>\n    </footer>\n\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n                <slide>\n                    <h2>BURRO</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    \n    <script src=\"https://banana.kruceo.com/dist/bundle.cdn.js\"></script>\n    \n\n\n",
+    "head": "\n    <route>main</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>Kruceo | Main</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link rel='stylesheet' type='text/css' media='screen' href='main.less'>\n    <script src=\"srum.js\"></script>\n    <style>\n        @import url('https://fonts.googleapis.com/css?family=Karla');\n    </style>\n"
+  },
+  "cssPaths": [
+    "* {\n  margin: 0 auto;\n}\nbody {\n  background: linear-gradient(black 0%, #11001a 100%);\n  background-repeat: no-repeat;\n}\n.bar {\n  position: fixed;\n  top: 0;\n  background-color: black;\n  z-index: 5;\n  width: 100%;\n  height: 45px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.bar .logo {\n  width: 30px;\n  padding-left: 2px;\n}\n.bar .menu {\n  display: flex;\n  padding: 0;\n  position: absolute;\n}\n.bar .menu li {\n  list-style: none;\n  margin: 0 60px;\n}\n.bar .menu li a {\n  text-decoration: none;\n}\n.bar .menu li p {\n  cursor: pointer;\n  color: white;\n  text-align: center;\n  font-family: 'karla';\n  text-transform: uppercase;\n}\n.bar .menu li p:hover {\n  color: #d61c59;\n}\n.bar .social {\n  width: 100%;\n  margin: 0 0;\n  justify-content: flex-end;\n  display: flex;\n}\n.bar .social li {\n  margin: 0 10px;\n}\n.bar .social li img {\n  width: 30px;\n}\n.wallpaper-ground {\n  height: 95vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  transform: scaleY(1);\n}\n.wallpaper-ground div {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.wallpaper-ground h2 {\n  font-family: 'karla';\n  color: #d61c59;\n  font-size: 100px;\n  animation: forwards welcome 1s cubic-bezier(0, 1, 1, 1);\n}\n.wallpaper-ground .line {\n  animation: forwards welcome 1.5s;\n  width: 500px;\n  height: 12px;\n  background-color: #d61c59;\n}\n.wallpaper-ground slider h2 {\n  font-size: 40px;\n}\n.content {\n  width: 1000px;\n}\n.content section {\n  margin-top: 120px;\n  margin-bottom: 60px;\n}\n.content section h2 {\n  text-align: center;\n  text-transform: uppercase;\n  font-size: 30px;\n  font-family: 'karla';\n  color: white;\n  margin-bottom: 10px;\n}\n.content section slider slider-frame slide div {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  background-color: #242424;\n  color: white;\n  border-radius: 20px;\n  overflow: hidden;\n}\n.content section slider slider-frame slide div img {\n  width: 350px;\n  transition: filter 500ms;\n}\n.content section slider slider-frame slide div img:hover {\n  filter: grayscale();\n}\n.content section slider slider-frame slide div div {\n  display: block;\n}\n.content section slider slider-frame slide div div h2 {\n  padding: 10px;\n  text-align: left;\n  color: #d61c59;\n}\n.content section slider slider-frame slide div div p {\n  padding: 10px;\n  font-family: 'karla';\n  text-align: left;\n  height: 230px;\n}\n.content section slider slider-frame slide div div a {\n  width: 100%;\n  padding: 10px;\n  text-decoration: none;\n  text-align: end;\n  font-family: 'karla';\n  color: #a3a3a3;\n  transition: color 200ms;\n}\n.content section slider slider-frame slide div div a:hover {\n  color: #d61c59;\n}\n.content #welcome-itens #boxes {\n  display: flex;\n}\n.content #welcome-itens #boxes #box {\n  width: 200px;\n  height: 200px;\n  background-color: #242424;\n  border-radius: 20px;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.content #welcome-itens #boxes #box h2 {\n  font-size: 20px;\n}\n.content #welcome-itens #boxes #box p {\n  color: white;\n  font-family: 'karla';\n  text-align: center;\n  height: 80px;\n}\n.content #welcome-itens #boxes #box img {\n  width: 80px;\n  padding: 5px;\n}\nfooter {\n  width: 100%;\n  height: 100px;\n  background-color: rgba(0, 255, 255, 0);\n}\n@keyframes welcome {\n  0% {\n    opacity: 0;\n  }\n  25% {\n    transform: translate(0, -100px);\n    opacity: 0;\n  }\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "module",
+      "code": "import { initAllSliders } from './node_modules/bananaslider'\nimport {initAllWoodPicker} from './node_modules/pasteljs'\ninitAllSliders()\ninitAllWoodPicker()\nexport default true",
+      "src": "main.js"
+    },
+    {
+      "type": "",
+      "code": "",
+      "src": "https://banana.kruceo.com/dist/bundle.cdn.js"
+    },
+    {
+      "type": "",
+      "code": "\n\n        console.log('olá')\n    "
+    },
+    {
+      "type": "",
+      "code": "\n    console.log('oi')\n"
+    }
+  ],
+  "route": "main",
+  "path": "./app/routes/pages/KruceoMain/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<h2>Hello world</h2>\n    \n    \n",
+    "head": "\n    <meta charset='utf-8'>\n    <title>princial</title>\n"
+  },
+  "cssPaths": [
+    "body\n{\n    background-color: aqua;\n}"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "console.log('okkkk')",
+      "src": "outro.js"
+    },
+    {
+      "type": "",
+      "code": "console.log('ok')",
+      "src": "main.js"
+    }
+  ],
+  "route": null,
+  "path": "./app/routes/pages/page2/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<main>\n        <section class=\"input-ground\">\n            <div>\n                <p>peso (KG)</p>\n                <div>\n                    <input id=\"peso-kg\" type=\"number\" value=\"1200\">\n                </div>\n            </div>\n            <div>\n                <p>dianteira (%)</p>\n                <div>\n\n                    <input id=\"dianteira\" type=\"number\" value=\"55\">\n                </div>\n            </div>\n\n        </section>\n\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>MOLAS</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"resultadoD\">D: 129.6 kgf/mm</h2>\n                    <h2 id=\"resultadoT\">T: 106.1 kgf/mm</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>RETORNO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"retornoD\">D: 8.3 points</h2>\n                    <h2 id=\"retornoT\">T: 6.9 points</h2>\n                </div>\n            </div>\n\n        </section>\n        <section>\n\n            <div>\n                <div class=\"titulo\">\n                    <h2>COMPRESSAO</h2>\n                </div>\n                <div class=\"resultado\">\n                    <h2 id=\"compressaoD\">D: 12.4 points</h2>\n                    <h2 id=\"compressaoT\">T: 10.4 points</h2>\n                </div>\n            </div>\n\n        </section>\n\n    </main>\n",
+    "head": "\n    <route>forza</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>ISSO ai</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link    rel=  'stylesheet' type='text/css' media='screen' href='main.css'>\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');\n\n        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');\n    </style>\n"
+  },
+  "cssPaths": [
+    "picture\n{\n  width: 100px;\n}",
+    "body {\n  background-position: 0 0;\n  background-size: cover;\n  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7043a0d1-b74b-4b91-a3af-cad99823d060/dfegna6-6d146a1f-d3e1-425f-a2d6-6c2ee028eaca.jpg/v1/fill/w_613,h_350,q_70,strp/desktop_wallpaper___night_sky_4_by_niphion_dfegna6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvZGZlZ25hNi02ZDE0NmExZi1kM2UxLTQyNWYtYTJkNi02YzJlZTAyOGVhY2EuanBnIiwiaGVpZ2h0IjoiPD01MTUiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzcwNDNhMGQxLWI3NGItNGI5MS1hM2FmLWNhZDk5ODIzZDA2MFwvbmlwaGlvbi00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.Oq625L-zpOQaI4bt_R49v2VgxCDHxM0LmUEUq1WjrPA);\n}\nmain {\n  width: 80%;\n  margin: 0 auto;\n  font-family: 'dongle';\n  color: white;\n}\nsection {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\nsection > div {\n  backdrop-filter: blur(20px);\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  overflow: hidden;\n  margin: 10px;\n  border-radius: 10px;\n}\nsection > div .titulo {\n  background-color: rgba(0, 0, 0, 0.7);\n}\nsection > div .titulo h2 {\n  margin: 0;\n  width: 100%;\n  text-align: center;\n  font-size: 45px;\n}\nsection > div .resultado {\n  font-size: 35px;\n  display: flex;\n  justify-content: center;\n}\nsection > div .resultado > h2 {\n  margin: 0 40px;\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "",
+      "code": "\n        window.onload = () => {\n            getSuspension();\n            document.querySelectorAll('input').forEach((inp, indice) => {\n                inp.onchange = function () {\n                    getSuspension();\n                }\n\n            }\n            )\n        }\n\n        function getSuspension() {\n            var peso = 1132;\n            peso = document.getElementById('peso-kg').value\n            var pesoLibras = peso * 2.2\n            var dianteira = 61;\n\n            dianteira = document.getElementById('dianteira').value\n\n            var traseira = 100 - dianteira;\n            var dianteiraResult = pesoLibras * (dianteira / 100)\n            var traseiraResult = pesoLibras * (traseira / 100)\n\n            var resultD = ((dianteiraResult) / 2) / 5.6\n            var resultT = ((traseiraResult) / 2) / 5.6\n\n            document.querySelector('#resultadoD').innerHTML = \"D: \" + resultD.toFixed(1) + ' kgf/mm';\n            document.querySelector('#resultadoT').innerHTML = 'T: ' + resultT.toFixed(1) + ' kgf/mm';\n            document.querySelector('#retornoD').innerHTML = \"D: \" + (((dianteiraResult / 2) / 100) + 1).toFixed(1) + ' points';\n            document.querySelector('#retornoT').innerHTML = 'T: ' + (((traseiraResult / 2) / 100) + 1).toFixed(1) + ' points'\n            document.querySelector('#compressaoD').innerHTML = 'D: ' + ((((dianteiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n            document.querySelector('#compressaoT').innerHTML = 'T: ' + ((((traseiraResult / 2) / 100) + 1) * 1.5).toFixed(1) + ' points'\n        }\n    "
+    }
+  ],
+  "route": "forza",
+  "path": "./app/routes/pages/page1/"
+}
+
+
+
+------
+
+
+{
+  "html": {
+    "body": "<header class=\"bar\">\n        <img class=\"logo\" src=\"./public/img/logo.png\" alt=\"\">\n        <ul class=\"menu\">\n            <li>\n                <a href=\"forza\" rel=\"no-refresh\">\n                    <p>Main</p>\n                </a>\n            </li>\n            <li>\n\n                <p>Projects</p>\n\n            </li>\n            <li>\n\n                <p>Info</p>\n\n            </li>\n        </ul>\n        <ul class=\"social\">\n            <li>\n                <img src=\"img/git.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/instagram.png\" alt=\"\">\n            </li>\n            <li>\n                <img src=\"img/face.png\" alt=\"\">\n            </li>\n        </ul>\n    </header>\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    <header class=\"content\">\n        <section id=\"welcome-itens\">\n            <h2>Just a look</h2>\n            <div id=\"boxes\">\n                <div id=\"box\">\n                    <h2>Open Source</h2>\n                    <p>You will reach open source library here</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091819.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Multi Language</h2>\n                    <p>Projects in multiple languages and platforms</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091807.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>From dev for dev</h2>\n                    <p>Get libraries to make your work a little bit more easy </p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091822.png\" alt=\"\">\n                </div>\n                <div id=\"box\">\n                    <h2>Different projects</h2>\n                    <p>See some projects with one screw less</p>\n                    <img src=\"https://cdn-icons-png.flaticon.com/512/8091/8091799.png\" alt=\"\">\n                </div>\n            </div>\n        </section>\n        <section>\n            <h2>Highlights</h2>\n            <slider cooldown=\"5000\">\n                <slide>\n                    <div>\n                        <img src=\"./public/img/72dddd7835.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;BananaSlider/&gt;</h2>\n                            <p>BananaSlider is a library built in pure JavaScript, is a very easy and customizable way\n                                to create slides (carrousel's) with total control over it. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/bananaslider\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n                <slide>\n                    <div>\n                        <img src=\"./public/img/code-sample.png\" alt=\"tatuclickericon\">\n                        <div>\n                            <h2>&lt;PipocaJS/&gt;</h2>\n                            <p>Version fixer and incrementer for JavaScript and Git repositories, just type \"pipoca\" and\n                                you can forget to increment your package version...\n                                This works watching commits and yours messages. </p>\n                            <a target=\"_blank\" href=\"https://github.com/kruceo/PipocaJS\">Take a look</a>\n                        </div>\n                    </div>\n                </slide>\n            </slider>\n        </section>\n\n        <section>\n\n        </section>\n    </header>\n    <footer>\n        <h2>\n            All rights reserved ⚠️\n        </h2>\n    </footer>\n\n    <parallax style=\"z-index: -2;\">\n        <header class=\"wallpaper-ground\">\n            <div>\n                <h2>&lt;Welcome/&gt;</h2>\n            </div>\n            <div class=\"line\"></div>\n            <slider cooldown=\"10000\" speed=\"1000\">\n                <slide>\n                    <h2>JS</h2>\n                </slide>\n                <slide>\n                    <h2>HTML</h2>\n                </slide>\n                <slide>\n                    <h2>CSS</h2>\n                </slide>\n                <slide>\n                    <h2>BURRO</h2>\n                </slide>\n            </slider>\n        </header>\n    </parallax>\n    \n    \n",
+    "head": "\n    <route>main</route>\n    <meta charset='utf-8'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <title>Kruceo | Main</title>\n    <meta name='viewport' content='width=device-width, initial-scale=1'>\n    <link rel='stylesheet' type='text/css' media='screen' href='main.less'>\n    <script src=\"srum.js\"></script>\n    <style>\n        @import url('https://fonts.googleapis.com/css?family=Karla');\n    </style>\n"
+  },
+  "cssPaths": [
+    "* {\n  margin: 0 auto;\n}\nbody {\n  background: linear-gradient(black 0%, #11001a 100%);\n  background-repeat: no-repeat;\n}\n.bar {\n  position: fixed;\n  top: 0;\n  background-color: black;\n  z-index: 5;\n  width: 100%;\n  height: 45px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.bar .logo {\n  width: 30px;\n  padding-left: 2px;\n}\n.bar .menu {\n  display: flex;\n  padding: 0;\n  position: absolute;\n}\n.bar .menu li {\n  list-style: none;\n  margin: 0 60px;\n}\n.bar .menu li a {\n  text-decoration: none;\n}\n.bar .menu li p {\n  cursor: pointer;\n  color: white;\n  text-align: center;\n  font-family: 'karla';\n  text-transform: uppercase;\n}\n.bar .menu li p:hover {\n  color: #d61c59;\n}\n.bar .social {\n  width: 100%;\n  margin: 0 0;\n  justify-content: flex-end;\n  display: flex;\n}\n.bar .social li {\n  margin: 0 10px;\n}\n.bar .social li img {\n  width: 30px;\n}\n.wallpaper-ground {\n  height: 95vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  transform: scaleY(1);\n}\n.wallpaper-ground div {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.wallpaper-ground h2 {\n  font-family: 'karla';\n  color: #d61c59;\n  font-size: 100px;\n  animation: forwards welcome 1s cubic-bezier(0, 1, 1, 1);\n}\n.wallpaper-ground .line {\n  animation: forwards welcome 1.5s;\n  width: 500px;\n  height: 12px;\n  background-color: #d61c59;\n}\n.wallpaper-ground slider h2 {\n  font-size: 40px;\n}\n.content {\n  width: 1000px;\n}\n.content section {\n  margin-top: 120px;\n  margin-bottom: 60px;\n}\n.content section h2 {\n  text-align: center;\n  text-transform: uppercase;\n  font-size: 30px;\n  font-family: 'karla';\n  color: white;\n  margin-bottom: 10px;\n}\n.content section slider slider-frame slide div {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  background-color: #242424;\n  color: white;\n  border-radius: 20px;\n  overflow: hidden;\n}\n.content section slider slider-frame slide div img {\n  width: 350px;\n  transition: filter 500ms;\n}\n.content section slider slider-frame slide div img:hover {\n  filter: grayscale();\n}\n.content section slider slider-frame slide div div {\n  display: block;\n}\n.content section slider slider-frame slide div div h2 {\n  padding: 10px;\n  text-align: left;\n  color: #d61c59;\n}\n.content section slider slider-frame slide div div p {\n  padding: 10px;\n  font-family: 'karla';\n  text-align: left;\n  height: 230px;\n}\n.content section slider slider-frame slide div div a {\n  width: 100%;\n  padding: 10px;\n  text-decoration: none;\n  text-align: end;\n  font-family: 'karla';\n  color: #a3a3a3;\n  transition: color 200ms;\n}\n.content section slider slider-frame slide div div a:hover {\n  color: #d61c59;\n}\n.content #welcome-itens #boxes {\n  display: flex;\n}\n.content #welcome-itens #boxes #box {\n  width: 200px;\n  height: 200px;\n  background-color: #242424;\n  border-radius: 20px;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.content #welcome-itens #boxes #box h2 {\n  font-size: 20px;\n}\n.content #welcome-itens #boxes #box p {\n  color: white;\n  font-family: 'karla';\n  text-align: center;\n  height: 80px;\n}\n.content #welcome-itens #boxes #box img {\n  width: 80px;\n  padding: 5px;\n}\nfooter {\n  width: 100%;\n  height: 100px;\n  background-color: rgba(0, 255, 255, 0);\n}\n@keyframes welcome {\n  0% {\n    opacity: 0;\n  }\n  25% {\n    transform: translate(0, -100px);\n    opacity: 0;\n  }\n}\n"
+  ],
+  "jsPaths": [
+    {
+      "type": "module",
+      "code": "import { initAllSliders } from './node_modules/bananaslider'\nimport {initAllWoodPicker} from './node_modules/pasteljs'\ninitAllSliders()\ninitAllWoodPicker()\nexport default true",
+      "src": "main.js"
+    }
+  ],
+  "route": "main",
+  "path": "./app/routes/pages/KruceoMain/"
+}

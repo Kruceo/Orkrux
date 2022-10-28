@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^8.8.1",
-    "less": "^4.1.3"
-  }
+    "less": "^4.1.3",
+    "puppeteer": "^19.2.0"
+  },
+  "test":"pages.forEach((element,index) => { if(element.route && '/'+element.route.toLowerCase() == window.location.pathname.toLowerCase()){  console.log(element.route, window.location.pathname)  genPage(index)} });console.log(e)e.preventDefault()"
 }

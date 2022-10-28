@@ -1,21 +1,38 @@
 import { Parser, parse } from 'acorn'
 import fs, { existsSync, mkdirSync, readFileSync, write, writeFileSync } from 'fs'
+import path from 'path'
+import processJS from './posProcessJS.js'
+import processCSS from './posProcessCSS.js'
 const pagesPath = './app/routes/pages/'
 let pages = fs.readdirSync(pagesPath)
 
 let pagesCompiled = []
-pages.forEach(folder => {
+
+pages.forEach(async (folder) => {
     console.log(folder)
+
+    let page = genFromFiles(pagesPath + folder + '/')
+    let posProcess = await processJS(page)
+    await processCSS(page)
+    pagesCompiled.push( posProcess)
+    
+    fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + fs.readFileSync('template.js', 'utf-8'))
+    fs.writeFileSync('out/index.html',fs.readFileSync('template.html','utf-8'))
+})
+
+
+function genFromFiles(dir) {
     let page = {
         html: { body: null, head: null },
         cssPaths: [],
         jsPaths: [],
-        route: null
+        route: null,
+        path: null
     }
-    let content = fs.readdirSync(pagesPath + folder + '/');
-    let css
+    let content = fs.readdirSync(dir);
     content.forEach(file => {
-        const filePath = pagesPath + folder + '/' + file
+
+        const filePath = dir + '/' + file
         if (file.endsWith('.html')) {
             let read = fs.readFileSync(filePath, 'utf-8')
             page.html.body = read.slice(read.lastIndexOf("<body>") + 6, read.indexOf("</body>"))
@@ -23,38 +40,54 @@ pages.forEach(folder => {
             if (read.lastIndexOf("<route>") >= 0) {
                 page.route = read.slice(read.lastIndexOf("<route>") + 7, read.indexOf("</route>"))
             }
+            page.path = dir
+            console.log("∟ " + file + ' => ' + page.route)
         }
     })
     content.forEach(file => {
-        const filePath = pagesPath + folder + '/' + file
-        if (file.endsWith('.js')) {
-            let read = fs.readFileSync(filePath, 'utf-8')
+        const filePath = dir + '/' + file
 
-            const parsed = parse(read, { ecmaVersion: 2021, allowImportExportEverywhere: true }).body
-            const types = parsed.map((declaration) => {
-                return declaration.type
-            })
-            if (types.includes('ImportDeclaration') || types.includes('ExportDefaultDeclaration') || types.includes('ExportDeclaration')) {
-                page.jsPaths.push({ type: "module", code: read })
-            }
-            else {
-                page.jsPaths.push({ type: null, code: read })
-            }
-            if (!existsSync('out/src/' + page.route + '/')) {
-                mkdirSync('out/src/' + page.route + '/', { recursive: true })
-            }
-            writeFileSync('out/src/' + page.route + '/' + file, readFileSync(filePath, 'utf-8'))
+        // if (file.endsWith('.js')) {
+        //     let read = fs.readFileSync(filePath, 'utf-8')
 
+        //     const parsed = parse(read, { ecmaVersion: 2021, allowImportExportEverywhere: true }).body
+        //     const types = parsed.map((declaration) => {
+        //         return declaration.type
+        //     })
+        //     if (types.includes('ImportDeclaration') || types.includes('ExportDefaultDeclaration') || types.includes('ExportDeclaration')) {
+        //         //page.jsPaths.push({ type: "module", code: read }) lembrar de desmarcar
+        //         console.log("∟ " + file + ' => module')
+        //     }
+        //     else {
+        //         //page.jsPaths.push({ type: null, code: read })
+        //         console.log("∟ " + file)
+        //     }
+
+        // }
+        function base64_encode(file) {
+            // read binary data
+            var bitmap = fs.readFileSync(file);
+            // convert binary data to base64 encoded string
+            return bitmap.toString('base64');
         }
+
+        
         if (file.endsWith('.css')) {
             let read = fs.readFileSync(filePath, 'utf-8')
             page.cssPaths.push(read)
-            css += '\n\n' + read
-
+            //css += '\n\n' + read
         }
+        if (fs.lstatSync(filePath).isDirectory()) {
+            console.log('∟ ' + file + '/')
+            if(file == 'public')
+            {   
+                console.log(path.join(filePath))
+                fs.cpSync(path.join(filePath)+ '/','./out/public',{recursive: true})
+            }
+        }
+        
     })
-    pagesCompiled.push(page)
-    fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + fs.readFileSync('template.js', 'utf-8'))
-    writeFileSync('out/index.css', css)
 
-})
+
+    return page
+}
