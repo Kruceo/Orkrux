@@ -43,7 +43,7 @@ function verifyPath() {
   pages.forEach((element, index) => {
     
     const path = window.location.pathname.replace('/','')
-    if (element.route!= null&&(element.route??"") == path) {
+    if (element?.route!= null&&(element.route??"") == path) {
       genPage(index)
       return
     }
