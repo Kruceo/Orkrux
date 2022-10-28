@@ -41,13 +41,14 @@ function changePage(newState) {
 
 function verifyPath() {
   pages.forEach((element, index) => {
-
-    if (element.route && '/' + element.route.toLowerCase() == window.location.pathname.toLowerCase()) {
+    
+    const path = window.location.pathname.replace('/','')
+    if (element.route!= null&&(element.route??"") == path) {
       genPage(index)
+      return
     }
   });
 }
-
 window.addEventListener('popstate', (e) => {
   verifyPath()
 })
