@@ -6,7 +6,7 @@ function genPage(index) {
   let pageIndex = index
   body.innerHTML = pages[pageIndex].html.body
   head.innerHTML = pages[pageIndex].html.head
-  
+
   body.querySelectorAll('a').forEach(each => {
     if (each.href.includes('http') && each.href.includes('://')) {
       each.onclick = (y) => {
@@ -21,9 +21,7 @@ function genPage(index) {
     ele.innerHTML = scr.code;
     body.appendChild(ele)
   })
-  head.querySelectorAll('link').forEach((each) => {
-    //each.remove()
-  })
+  
   document.documentElement.removeChild(document.querySelector('head'))
   document.documentElement.appendChild(head)
   document.documentElement.removeChild(document.querySelector('body'))
@@ -41,9 +39,9 @@ function changePage(newState) {
 
 function verifyPath() {
   pages.forEach((element, index) => {
-    
-    const path = window.location.pathname.replace('/','')
-    if (element?.route!= null&&(element.route??"") == path) {
+
+    const path = window.location.pathname.replace('/', '')
+    if (element?.route != null && (element.route ?? "") == path) {
       genPage(index)
       return
     }
@@ -51,7 +49,6 @@ function verifyPath() {
 }
 window.addEventListener('popstate', (e) => {
   verifyPath()
-})
+});
 
-//verifyPath()
-verifyPath()
+verifyPath();

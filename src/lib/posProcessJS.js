@@ -1,6 +1,4 @@
 import puppeteer from "puppeteer"
-import path from "path"
-import { pathToFileURL } from "url"
 import fs from 'fs'
 import { appendFileSync, writeFileSync } from "fs";
 
@@ -8,11 +6,12 @@ export default async function process(pageObject) {
     let target = pageObject;
     const browser = await puppeteer.launch({ headless: true, devtools: true })
     const page = await browser.newPage()
-
+   
+   
     await page.setContent(target.html.body)
-
+   
     await page.screenshot({ fullPage: true, path: "here.png" })
-
+   
     let onHtmlScripts = await page.evaluate(() => {
         let i = document.querySelectorAll('script')
         let t = []
@@ -23,6 +22,7 @@ export default async function process(pageObject) {
                         type: each.type,
                         code: each.innerHTML
                     })
+                    
             }
             else {
                 t.push(
@@ -36,11 +36,12 @@ export default async function process(pageObject) {
         })
         return t
     })
-    let scriptsTerminated = false
+   
     onHtmlScripts.forEach((each) => {
         if (each.src && !each.src.startsWith('http') && !each.src.includes('://')) {
             each.code = (fs.readFileSync(target.path + each.src, 'utf-8'))
         }
+       
     })
     let newBody = await page.evaluate(() => {
         let i = document.querySelectorAll('script')
@@ -60,12 +61,14 @@ export default async function process(pageObject) {
         })
         return document.body.innerHTML
     })
-
+   
     target.html.body = newBody
-    //console.log(onHtmlScripts)
+    
     target.jsPaths.push(...onHtmlScripts)
     appendFileSync('test/JSProcess.json', '\n\n\n\n\n\n\n' + JSON.stringify(target, null, 2))
+   
     browser.close()
+   
     return target
 
 }
