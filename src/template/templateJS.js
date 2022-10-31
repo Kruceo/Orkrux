@@ -8,7 +8,9 @@ export default `function genPage(index) {
   head.innerHTML = pages[pageIndex].html.head
 
   body.querySelectorAll('a').forEach(each => {
-    if (each.href.includes('http') && each.href.includes('://')) {
+    let url = new URL(each.href)
+    console.log(url.hostname, location.hostname)
+    if (url.hostname == location.hostname) {
       each.onclick = (y) => {
         y.preventDefault()
         changePage(each.href)
