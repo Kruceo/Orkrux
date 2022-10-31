@@ -1,70 +1,66 @@
 
 import fs, { existsSync, mkdirSync, readFileSync, write, writeFileSync } from 'fs'
 import path from 'path'
+import templateJS from './src/template/templateJS.js'
+import templateHTML from './src/template/templateHTML.js'
 import processJS from './src/lib/posProcessJS.js'
 import processCSS from './src/lib/posProcessCSS.js'
 import posProcessPKG from './src/lib/posProcessPKG.js'
-
 const outPath = './out/'
 const testPath = './test/'
 const pagesPath = './pages/'
 let pages = fs.readdirSync(pagesPath)
 
 let pagesCompiled = []
-verifyPaths()
 
-for (const fold of pages) {
-    await gen(fold)
 
+export async function build() {
+
+    verifyPaths()
+    for (const fold of pages) {
+        await gen(fold)
+
+    }
 }
- function loading(time) {
+function loading(time) {
     let stage = 0;
-    let stages =[
-    '―',
-    '/',
-    '|',
-    '\\',
-    '―']
-    stages.forEach((each,index)=>stages[index] = each.padEnd(20," "))
-    return setInterval(()=>
-    {
-       
-        if(stage >= stages.length - 1)
-        {
+    let stages = [
+        '―',
+        '/',
+        '|',
+        '\\',
+        '―']
+    stages.forEach((each, index) => stages[index] = each.padEnd(20, " "))
+    return setInterval(() => {
+
+        if (stage >= stages.length - 1) {
             stage = 0
         }
-        else
-        {
+        else {
             stage++;
         }
-        process.stdout.write('\r'+stages[stage])
-        
-    },100)
+        process.stdout.write('\r' + stages[stage])
+
+    }, 100)
 }
 async function gen(folder) {
-
-    
+    console.log(process.cwd())
     const load = loading(111)
     console.log(folder)
     let page = genFromFiles(pagesPath + folder + '/')
     let posJS = await processJS(page)
-
-
-
     let posCSS = await processCSS(posJS)
-
-
     let posPKG = posProcessPKG(posCSS)
 
 
     pagesCompiled.push(posPKG)
-
-    fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + fs.readFileSync('src/template/template.js', 'utf-8'))
-    fs.writeFileSync('out/index.html', fs.readFileSync('src/template/template.html', 'utf-8'))
+    
+    fs.writeFileSync('out/app.js', 'const pages = ' + JSON.stringify(pagesCompiled, null, 2) + '\n' + templateJS)
+    fs.writeFileSync('out/index.html', templateHTML)
     clearInterval(load)
     process.stdout.clearLine(-1)
-    console.log('\ncomplete ' + folder)
-
+    console.log('\nComplete ' + folder)
+    
 
 }
 

@@ -48,7 +48,7 @@ export default async function process(pageObject) {
     target.html.head = newHead
     //console.log(onHtmlScripts)
 
-    appendFileSync('test/CSSProcess.html', "\n\n" + newHead + '\n\n')
+    appendFileSync('test/CSSProcess.html', "\n\n" + target.html.head + '\n\n')
     browser.close()
     return target
 

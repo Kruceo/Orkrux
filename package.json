@@ -1,12 +1,15 @@
 {
   "name": "orkrux",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "",
   "type": "module",
   "main": "engine.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gen": "node engine.js"
+  },
+  "bin": {
+    "orkrux": "./index.js"
   },
   "author": "",
   "license": "ISC",
