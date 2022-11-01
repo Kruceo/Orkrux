@@ -9,13 +9,13 @@ import posProcessPKG from './src/lib/posProcessPKG.js'
 const outPath = './out/'
 const testPath = './test/'
 const pagesPath = './pages/'
-let pages = fs.readdirSync(pagesPath)
+let pages = []
 
 let pagesCompiled = []
 
 
 export async function build() {
-
+    pages = fs.readdirSync(pagesPath)
     verifyPaths()
     for (const fold of pages) {
         await gen(fold)
