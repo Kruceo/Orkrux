@@ -1,8 +1,0 @@
-{
-    "type": "module",
-    "dependencies": {
-        "bananaslider": "github:kruceo/bananaslider",
-        "less": "^4.1.3",
-        "pasteljs": "github:kruceo/pasteljs"
-    }
-}
