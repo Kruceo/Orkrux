@@ -9,6 +9,8 @@ Orkrux as created for generate SPA's, originaly to reuse standart HTML's pages.
 * Node.js
 * Puppeteer
 <br><br>
+## Installation
+```
 npm install -g kruceo/orkrux
 ```
 <br><br>
